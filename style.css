@@ -1,0 +1,114 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Contact form css */
+.section-title span {
+    display: block;
+    font-size: 1.25rem;
+    color: #007bff;
+  }
+
+  .section-title h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 20px 0;
+  }
+
+  .form-control {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+
+  .loading,
+  .error-message,
+  .sent-message {
+    display: none;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  /* Responsive styling for smaller screens */
+  @media (max-width: 767px) {
+    .form-group input,
+    .form-group textarea {
+      font-size: 1rem;
+    }
+
+    .section-title h2 {
+      font-size: 2rem;
+    }
+  }
+  /* End Here */
+
+  .map-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+   /* Overlay Background */
+   #popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Pop-up Form */
+#popup-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Close Button */
+#popup-form .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000;
+}
